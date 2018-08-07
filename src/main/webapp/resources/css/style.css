@@ -1,0 +1,127 @@
+body {
+	background-color: #F3F3F3;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+	outline: none;
+	outline-style: none;
+}
+#header {
+	height: 100px;
+}
+#logo {
+	margin: 20px auto;
+	margin-bottom: 0;
+	text-align: center;
+}
+#logo img {
+	width: 65px;
+	height: 65px;
+	filter: drop-shadow(3px 3px 3px #333);
+}
+#content {
+	margin-left: 80px;
+	width: 1200px;
+}
+.border-wrapper {
+	height: 175px;
+width: 400px;
+float: left;
+}
+#new-board {
+	color: white;
+	width: 345px;
+	height: auto;
+	background-color: #9fe7a4;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	justify-content: center;	
+	-webkit-box-align: center;
+	align-items: center;
+	border-radius: 5.5px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+	font-weight: 900;
+	text-shadow: 0px 0px 3px #000;
+	margin: 0 auto;
+}
+#create-new-board {
+	color: white;
+	width: 345px;
+	height: auto;
+	background-color: #9fe7a4;
+	padding: 30px 0;
+	display: flex;
+	flex-direction: column;
+	border-radius: 5.5px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+	font-weight: 900;
+	text-shadow: 0px 0px 3px #000;
+	margin: 0 auto;
+}
+#cancel_button {
+	color: white;
+	width: auto;
+	height: 43px;
+	margin: 15px -5px 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 200ms ease-in-out;
+	border: none;
+	background: none;
+	color: white;
+	font-weight: 900;
+	text-shadow: 0px 0px 3px #000;
+	margin-right: 10px;
+}
+#cancel_button:hover {
+	color: #00F6C6;
+}
+#create-new-board form {
+	padding-top: 35px;
+	padding-left: 60px;
+	font-size: 13px;
+	font-weight: normal;
+}
+#create-new-board input {
+	padding: 11px 15px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 2.5px solid rgba(255, 255, 255, 0.8);
+	box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
+	width: 200px;
+	margin-bottom: 30px;
+}
+#top-panel {
+	border-bottom: 1px solid white;
+	padding: 25px 40px;
+}
+#top-panel a {
+	float: right;
+}
+.new_block {
+	width: 345px;
+	margin: 20px;
+	margin-top: 0;
+	background-color: white;
+	color: #333;
+	padding: 15px 0;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	border-radius: 5.5px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+	cursor: pointer;
+	transition: 200ms ease-in-out;
+	font-weight: 900;
+}
