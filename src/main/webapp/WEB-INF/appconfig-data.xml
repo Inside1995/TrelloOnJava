@@ -4,10 +4,10 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://localhost:3306/Trello"/>
-        <property name="username" value="root"/>
-        <property name="password" value="insideoutside"/>
+        <property name="driverClassName" value="org.postgresql.Driver"/>
+        <property name="url" value="jdbc:postgresql://ec2-54-217-245-53.eu-west-1.compute.amazonaws.com:5432/dcvaksmf83k8go?sslmode=require"/>
+        <property name="username" value="devsxlqmbojaoq"/>
+        <property name="password" value="ac2bff84a2dd3342d98b4791e667749db088c07f64b0d1c11bd2cef13225f743"/>
     </bean>
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
         <property name="dataSource" ref="dataSource"/>
@@ -20,7 +20,7 @@
         </property>
         <property name="hibernateProperties">
             <props>
-                <prop key="dialect">org.hibernate.dialect.MySQLDialect</prop>
+                <prop key="dialect">org.hibernate.dialect.PostgreSQL9Dialect</prop>
                 <prop key="max_fetch_depth">3</prop>
             </props>
         </property>
